@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class UserRegisterResponse {
+public class UserResponse {
     private int code;
     private String description;
-    private String userId;
+    private Integer userId;
 }

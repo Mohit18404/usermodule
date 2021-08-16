@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 @Builder
-public class ValidateOtpResponse {
+public class LoginResponse {
     private int code;
     private String description;
     private Date tokenCreatedTime;

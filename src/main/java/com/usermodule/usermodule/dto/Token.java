@@ -1,6 +1,5 @@
 package com.usermodule.usermodule.dto;
 
-
 import com.sun.istack.internal.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,24 +12,20 @@ import java.util.Date;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "User")
-public class User {
-
+@Table(name = "token")
+public class Token {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "id")
+    private int id;
+    @NotNull
     private int userId;
     @NotNull
-    private String firstName;
-    private String lastName;
+    private String token;
     @NotNull
-    private String email;
+    private String status;
     @NotNull
-    private String password;
-    private String phone;
-    private String userStatus;
     private Date createdAt;
+    @NotNull
     private Date updatedAt;
-    private Boolean verifiedEmail;
-    private Boolean verifiedPhone;
 }
